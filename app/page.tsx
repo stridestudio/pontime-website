@@ -325,8 +325,8 @@ export default function PontimeHomepage() {
             </div>
 
             {/* Background */}
-            <div className="aspect-[2/3] absolute inset-1 overflow-hidden rounded-3xl border border-accent/20 sm:aspect-video lg:rounded-[3rem]">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#0f2419] via-[#1a3a2e] to-[#0a1812] opacity-95" />
+            <div className="absolute inset-0 -z-10 overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-[#0f2419] via-[#1a3a2e] to-[#0a1812]" />
             </div>
           </div>
         </section>
