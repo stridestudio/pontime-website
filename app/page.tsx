@@ -334,7 +334,15 @@ export default function PontimeHomepage() {
               <div className="md:max-w-44 md:border-r md:border-accent/20 md:pr-6">
                 <p className="text-end text-sm text-primary-foreground/70">Vertrouwd door collectors</p>
               </div>
-              <div className="relative py-6 md:w-[calc(100%-11rem)]">
+              <div
+                className="relative py-6 md:w-[calc(100%-11rem)]"
+                style={{
+                  WebkitMaskImage:
+                    "linear-gradient(to right, transparent 0, #000 10%, #000 90%, transparent 100%)",
+                  maskImage:
+                    "linear-gradient(to right, transparent 0, #000 10%, #000 90%, transparent 100%)",
+                }}
+              >
                 <InfiniteSlider speedOnHover={20} speed={40} gap={112}>
                   <div className="flex items-center gap-2 text-primary-foreground/60">
                     <Award className="h-5 w-5" />
@@ -357,18 +365,6 @@ export default function PontimeHomepage() {
                     <span className="text-sm font-medium">Laserwelding</span>
                   </div>
                 </InfiniteSlider>
-                <ProgressiveBlur
-                  className="pointer-events-none absolute left-0 top-0 h-full w-24"
-                  direction="left"
-                  blurIntensity={6}
-                  blurLayers={6}
-                />
-                <ProgressiveBlur
-                  className="pointer-events-none absolute right-0 top-0 h-full w-24"
-                  direction="right"
-                  blurIntensity={6}
-                  blurLayers={6}
-                />
               </div>
             </div>
           </div>
