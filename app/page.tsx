@@ -611,7 +611,7 @@ export default function PontimeHomepage() {
         </section>
 
         {/* Testimonial */}
-        <section className="bg-primary py-24 md:py-32 border-t border-accent/20">
+        <section className="bg-primary pb-24 md:pb-32">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
