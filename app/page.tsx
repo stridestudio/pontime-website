@@ -319,7 +319,7 @@ export default function PontimeHomepage() {
                 className="hidden lg:block absolute right-12 top-1/2 -translate-y-1/2"
               >
                 <div className="w-80 h-80 xl:w-96 xl:h-96">
-                  <LiveClock className="w-full h-full" />
+                  {/* <LiveClock className="w-full h-full" /> */}
                 </div>
               </motion.div>
             </div>
@@ -518,7 +518,7 @@ export default function PontimeHomepage() {
               className="max-w-2xl mx-auto"
             >
               <div className="aspect-[4/3] rounded-2xl overflow-hidden border border-accent/20">
-                <BeforeAfterSlider className="w-full h-full" />
+                {/* <BeforeAfterSlider className="w-full h-full" /> */}
               </div>
               <p className="text-center text-primary-foreground/60 text-sm mt-4">
                 Sleep de divider om het verschil te zien
@@ -542,7 +542,7 @@ export default function PontimeHomepage() {
                 Ontdek stap voor stap hoe wij uw horloge behandelen
               </p>
             </motion.div>
-            <RestorationTimeline />
+            {/* <RestorationTimeline /> */}
           </div>
         </section>
 
@@ -604,7 +604,7 @@ export default function PontimeHomepage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-                <ServiceConfigurator />
+                {/* <ServiceConfigurator /> */}
               </motion.div>
             </div>
           </div>
@@ -621,7 +621,7 @@ export default function PontimeHomepage() {
                 transition={{ duration: 0.5 }}
                 className="order-2 lg:order-1"
               >
-                <CollectorsPassport className="max-w-md mx-auto lg:mx-0" />
+                {/* <CollectorsPassport className="max-w-md mx-auto lg:mx-0" /> */}
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
