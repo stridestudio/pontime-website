@@ -164,7 +164,7 @@ export function RestorationTimeline({ className }: { className?: string }) {
                 alt={steps[activeStep - 1].title}
                 className="absolute inset-0 w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-[#8fbc8f]/35 pointer-events-none" />
+              <div className="absolute inset-0 bg-[#8fbc8f]/25 pointer-events-none" />
             </div>
             <div className="flex-1 p-6 md:p-8">
               <div className="flex items-start gap-4 mb-4">

@@ -403,7 +403,7 @@ export default function PontimeHomepage() {
                       alt="Full service en reparaties"
                       className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-[#8fbc8f]/35 pointer-events-none" />
+                    <div className="absolute inset-0 bg-[#8fbc8f]/25 pointer-events-none" />
                   </div>
                   <CardHeader>
                     <div className="md:p-4">
@@ -434,7 +434,7 @@ export default function PontimeHomepage() {
                       alt="Polijsten en lapideren"
                       className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-[#8fbc8f]/35 pointer-events-none" />
+                    <div className="absolute inset-0 bg-[#8fbc8f]/25 pointer-events-none" />
                   </div>
                   <CardHeader>
                     <div className="md:p-4">
@@ -465,7 +465,7 @@ export default function PontimeHomepage() {
                       alt="Restauratie van vintage uurwerken"
                       className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-[#8fbc8f]/35 pointer-events-none" />
+                    <div className="absolute inset-0 bg-[#8fbc8f]/25 pointer-events-none" />
                   </div>
                   <CardHeader>
                     <div className="md:p-4">
@@ -498,7 +498,7 @@ export default function PontimeHomepage() {
                         alt="Bezel cutten en gespecialiseerde diensten"
                         className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       />
-                      <div className="absolute inset-0 bg-[#8fbc8f]/35 pointer-events-none" />
+                      <div className="absolute inset-0 bg-[#8fbc8f]/25 pointer-events-none" />
                     </div>
                     <CardHeader className="flex-1">
                       <div className="md:p-4 flex flex-col md:flex-row items-start md:items-center gap-6">
@@ -611,7 +611,7 @@ export default function PontimeHomepage() {
                   alt="Het Pontime atelier in Bussum"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-[#8fbc8f]/35 pointer-events-none" />
+                <div className="absolute inset-0 bg-[#8fbc8f]/25 pointer-events-none" />
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
@@ -625,7 +625,7 @@ export default function PontimeHomepage() {
                   alt="Horlogemaker onderdelen"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-[#8fbc8f]/35 pointer-events-none" />
+                <div className="absolute inset-0 bg-[#8fbc8f]/25 pointer-events-none" />
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
@@ -639,7 +639,7 @@ export default function PontimeHomepage() {
                   alt="Het atelier van binnen"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-[#8fbc8f]/35 pointer-events-none" />
+                <div className="absolute inset-0 bg-[#8fbc8f]/25 pointer-events-none" />
               </motion.div>
             </div>
           </div>
@@ -797,7 +797,7 @@ export default function PontimeHomepage() {
                       alt={person.name}
                       className="absolute inset-0 w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-[#8fbc8f]/35 pointer-events-none" />
+                    <div className="absolute inset-0 bg-[#8fbc8f]/25 pointer-events-none" />
                   </div>
                   <h3 className="text-xl font-serif text-foreground mb-1">{person.name}</h3>
                   <p className="text-accent text-sm font-medium mb-3 tracking-wide uppercase">
