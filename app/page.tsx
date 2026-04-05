@@ -326,7 +326,7 @@ export default function PontimeHomepage() {
             </div>
 
             {/* Background */}
-            <div className="absolute inset-0 -z-10 overflow-hidden">
+            <div className="absolute inset-0 z-0 overflow-hidden">
               <img
                 src="/hero-bg.png"
                 alt=""
