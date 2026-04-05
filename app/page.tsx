@@ -330,12 +330,12 @@ export default function PontimeHomepage() {
         {/* Trust Indicators */}
         <section className="bg-primary pb-2 border-t border-accent/20">
           <div className="group relative m-auto max-w-7xl px-6">
-            <div className="flex flex-col items-center md:flex-row py-8">
+            <div className="flex flex-col items-center md:flex-row py-4">
               <div className="md:max-w-44 md:border-r md:border-accent/20 md:pr-6">
                 <p className="text-end text-sm text-primary-foreground/70">Vertrouwd door collectors</p>
               </div>
               <div
-                className="relative py-6 md:w-[calc(100%-11rem)]"
+                className="relative py-3 md:w-[calc(100%-11rem)]"
                 style={{
                   WebkitMaskImage:
                     "linear-gradient(to right, transparent 0, #000 10%, #000 90%, transparent 100%)",
@@ -371,7 +371,7 @@ export default function PontimeHomepage() {
         </section>
 
         {/* Services Section */}
-        <section id="diensten" className="bg-background py-24 md:py-32 border-t border-accent/20">
+        <section id="diensten" className="bg-background py-14 md:py-20 border-t border-accent/20">
           <div className="mx-auto max-w-7xl px-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
