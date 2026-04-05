@@ -390,11 +390,13 @@ export default function PontimeHomepage() {
                   className="pointer-events-none absolute left-0 top-0 h-full w-20"
                   direction="left"
                   blurIntensity={1}
+                  blurLayers={3}
                 />
                 <ProgressiveBlur
                   className="pointer-events-none absolute right-0 top-0 h-full w-20"
                   direction="right"
                   blurIntensity={1}
+                  blurLayers={3}
                 />
               </div>
             </div>

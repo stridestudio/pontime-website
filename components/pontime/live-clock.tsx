@@ -219,17 +219,13 @@ export function LiveClock({ className }: { className?: string }) {
     canvas.height = rect.height * dpr
     ctx.scale(dpr, dpr)
 
-    const animate = () => {
+    drawClock(ctx, rect.width, rect.height)
+    const intervalId = window.setInterval(() => {
       drawClock(ctx, rect.width, rect.height)
-      animationFrameRef.current = requestAnimationFrame(animate)
-    }
-
-    animate()
+    }, 1000)
 
     return () => {
-      if (animationFrameRef.current) {
-        cancelAnimationFrame(animationFrameRef.current)
-      }
+      window.clearInterval(intervalId)
     }
   }, [drawClock])
 
