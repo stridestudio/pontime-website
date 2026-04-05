@@ -542,7 +542,7 @@ export default function PontimeHomepage() {
                 Ontdek stap voor stap hoe wij uw horloge behandelen
               </p>
             </motion.div>
-            {/* <RestorationTimeline /> */}
+            <RestorationTimeline />
           </div>
         </section>
 
@@ -604,7 +604,7 @@ export default function PontimeHomepage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-                {/* <ServiceConfigurator /> */}
+                <ServiceConfigurator />
               </motion.div>
             </div>
           </div>
@@ -621,7 +621,7 @@ export default function PontimeHomepage() {
                 transition={{ duration: 0.5 }}
                 className="order-2 lg:order-1"
               >
-                {/* <CollectorsPassport className="max-w-md mx-auto lg:mx-0" /> */}
+                <CollectorsPassport className="max-w-md mx-auto lg:mx-0" />
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
