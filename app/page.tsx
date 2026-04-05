@@ -140,10 +140,10 @@ const Logo = ({ className, variant = 'dark' }: { className?: string; variant?: '
 }
 
 const menuItems = [
-  { name: 'Over ons', href: '#over-ons' },
-  { name: 'Werkwijze', href: '#werkwijze' },
   { name: 'Diensten', href: '#diensten' },
+  { name: 'Werkwijze', href: '#werkwijze' },
   { name: 'Configurator', href: '#configurator' },
+  { name: 'Over ons', href: '#over-ons' },
   { name: 'Contact', href: '#contact' },
 ]
 
@@ -381,72 +381,6 @@ export default function PontimeHomepage() {
                   blurLayers={3}
                 />
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* About Section */}
-        <section id="over-ons" className="bg-background py-24 md:py-32 border-t border-accent/20">
-          <div className="mx-auto max-w-7xl px-6">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="max-w-3xl mx-auto text-center mb-16"
-            >
-              <div className="inline-block mb-4 px-4 py-2 rounded-full bg-accent/20 border border-accent/40">
-                <span className="text-accent text-sm font-medium tracking-wide uppercase">
-                  Over ons
-                </span>
-              </div>
-              <h2 className="text-4xl md:text-5xl font-serif text-foreground mb-6">
-                De mannen achter Pontime
-              </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Pontime is opgericht vanuit een gedeelde passie voor horlogemakerij. Drie ervaren
-                horlogemakers, verenigd door één drijfveer: ieder horloge de zorg geven die het
-                verdient. Wij geloven dat een horloge meer is dan een tijdmeter — het is een erfstuk,
-                een verhaal, een stukje vakmanschap dat wij met trots onderhouden.
-              </p>
-            </motion.div>
-
-            <div className="grid gap-8 md:grid-cols-3 max-w-5xl mx-auto">
-              {[
-                {
-                  name: 'Naam 1',
-                  role: 'Horlogemaker & Oprichter',
-                  bio: 'Specialist in Rolex service en vintage restauratie. Ruim 20 jaar ervaring.',
-                },
-                {
-                  name: 'Naam 2',
-                  role: 'Horlogemaker',
-                  bio: 'Expert in complicaties en laserwelding. Trained bij toonaangevende ateliers.',
-                },
-                {
-                  name: 'Naam 3',
-                  role: 'Horlogemaker',
-                  bio: 'Gespecialiseerd in polijsten, lapideren en bezel-restauratie.',
-                },
-              ].map((person, index) => (
-                <motion.div
-                  key={person.name}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="text-center"
-                >
-                  <div className="aspect-[3/4] rounded-2xl bg-muted border border-border mb-5 overflow-hidden flex items-center justify-center">
-                    <span className="text-muted-foreground text-sm">Foto volgt</span>
-                  </div>
-                  <h3 className="text-xl font-serif text-foreground mb-1">{person.name}</h3>
-                  <p className="text-accent text-sm font-medium mb-3 tracking-wide uppercase">
-                    {person.role}
-                  </p>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{person.bio}</p>
-                </motion.div>
-              ))}
             </div>
           </div>
         </section>
@@ -708,6 +642,72 @@ export default function PontimeHomepage() {
               <p className="text-primary-foreground/70">Particulier - Bussum</p>
             </div>
           </motion.div>
+        </section>
+
+        {/* About Section */}
+        <section id="over-ons" className="bg-background py-24 md:py-32 border-t border-accent/20">
+          <div className="mx-auto max-w-7xl px-6">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="max-w-3xl mx-auto text-center mb-16"
+            >
+              <div className="inline-block mb-4 px-4 py-2 rounded-full bg-accent/20 border border-accent/40">
+                <span className="text-accent text-sm font-medium tracking-wide uppercase">
+                  Over ons
+                </span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-serif text-foreground mb-6">
+                De mannen achter Pontime
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Pontime is opgericht vanuit een gedeelde passie voor horlogemakerij. Drie ervaren
+                horlogemakers, verenigd door één drijfveer: ieder horloge de zorg geven die het
+                verdient. Wij geloven dat een horloge meer is dan een tijdmeter — het is een erfstuk,
+                een verhaal, een stukje vakmanschap dat wij met trots onderhouden.
+              </p>
+            </motion.div>
+
+            <div className="grid gap-8 md:grid-cols-3 max-w-5xl mx-auto">
+              {[
+                {
+                  name: 'Naam 1',
+                  role: 'Horlogemaker & Oprichter',
+                  bio: 'Specialist in Rolex service en vintage restauratie. Ruim 20 jaar ervaring.',
+                },
+                {
+                  name: 'Naam 2',
+                  role: 'Horlogemaker',
+                  bio: 'Expert in complicaties en laserwelding. Trained bij toonaangevende ateliers.',
+                },
+                {
+                  name: 'Naam 3',
+                  role: 'Horlogemaker',
+                  bio: 'Gespecialiseerd in polijsten, lapideren en bezel-restauratie.',
+                },
+              ].map((person, index) => (
+                <motion.div
+                  key={person.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="text-center"
+                >
+                  <div className="aspect-[3/4] rounded-2xl bg-muted border border-border mb-5 overflow-hidden flex items-center justify-center">
+                    <span className="text-muted-foreground text-sm">Foto volgt</span>
+                  </div>
+                  <h3 className="text-xl font-serif text-foreground mb-1">{person.name}</h3>
+                  <p className="text-accent text-sm font-medium mb-3 tracking-wide uppercase">
+                    {person.role}
+                  </p>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{person.bio}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
         </section>
 
         {/* Contact Section */}
