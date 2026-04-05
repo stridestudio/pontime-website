@@ -15,3 +15,7 @@ node_modules
 .next/
 .DS_Store
 .vercel
+
+# Stray images in project root (put assets in public/ instead)
+/WhatsApp Image*
+/hf_*.png
