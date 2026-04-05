@@ -21,6 +21,7 @@ const steps = [
     description: 'Uw horloge wordt geregistreerd en gefotografeerd. We documenteren de huidige staat en eventuele specifieke wensen.',
     icon: Package,
     duration: 'Dag 1',
+    image: '/atelier/cartier-handen.jpg',
   },
   {
     id: 2,
@@ -28,6 +29,7 @@ const steps = [
     description: 'Onze horlogemaker onderzoekt het uurwerk grondig. We identificeren alle problemen en stellen een reparatieplan op.',
     icon: Search,
     duration: 'Dag 1-2',
+    image: '/atelier/horlogemaker-loep.jpg',
   },
   {
     id: 3,
@@ -35,6 +37,7 @@ const steps = [
     description: 'Het horloge wordt volledig gedemonteerd. Elk onderdeel wordt apart gelegd en gecontroleerd.',
     icon: Cog,
     duration: 'Dag 2-3',
+    image: '/atelier/demonteren-bw.jpg',
   },
   {
     id: 4,
@@ -42,6 +45,7 @@ const steps = [
     description: 'Alle onderdelen gaan door ons ultrasone reinigingsbad. Vuil, oud vet en oxidatie worden verwijderd.',
     icon: Sparkles,
     duration: 'Dag 3-4',
+    image: '/atelier/onderdelen-tray.jpg',
   },
   {
     id: 5,
@@ -49,6 +53,7 @@ const steps = [
     description: 'Precisie-smering met speciale horlogeolie op alle bewegende delen. Elk punt wordt exact gedoseerd.',
     icon: Droplets,
     duration: 'Dag 4-5',
+    image: '/atelier/reviseren-blauw.jpg',
   },
   {
     id: 6,
@@ -56,6 +61,7 @@ const steps = [
     description: 'Het uurwerk wordt weer zorgvuldig in elkaar gezet. Nieuwe onderdelen worden indien nodig geplaatst.',
     icon: Settings,
     duration: 'Dag 5-7',
+    image: '/atelier/monteren-bw.jpg',
   },
   {
     id: 7,
@@ -63,6 +69,7 @@ const steps = [
     description: 'Fijnafstelling van de balans en nauwkeurigheid. Het horloge wordt in meerdere posities getest.',
     icon: CheckCircle2,
     duration: 'Dag 7-10',
+    image: '/atelier/timing-machine.jpg',
   },
   {
     id: 8,
@@ -70,6 +77,7 @@ const steps = [
     description: 'Eindcontrole, waterdichtheidstest en finale foto. Uw horloge is klaar voor ophalen.',
     icon: Camera,
     duration: 'Dag 10-14',
+    image: '/atelier/rolex-daydate.jpg',
   },
 ]
 
@@ -147,26 +155,35 @@ export function RestorationTimeline({ className }: { className?: string }) {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
           transition={{ duration: 0.2 }}
-          className="bg-card rounded-2xl border border-border p-6 md:p-8"
+          className="bg-card rounded-2xl border border-border overflow-hidden"
         >
-          <div className="flex flex-col md:flex-row md:items-start gap-6">
-            <div className="flex-shrink-0">
-              <div className="h-16 w-16 rounded-2xl bg-accent/20 flex items-center justify-center">
-                {(() => {
-                  const StepIcon = steps[activeStep - 1].icon
-                  return <StepIcon className="h-8 w-8 text-accent" />
-                })()}
-              </div>
+          <div className="flex flex-col md:flex-row">
+            <div className="md:w-2/5 relative aspect-[4/3] md:aspect-auto md:min-h-[280px] overflow-hidden bg-muted">
+              <img
+                src={steps[activeStep - 1].image}
+                alt={steps[activeStep - 1].title}
+                className="absolute inset-0 w-full h-full object-cover"
+              />
             </div>
-            <div className="flex-1">
-              <div className="flex items-center gap-3 mb-2">
-                <span className="text-sm font-medium text-accent">{steps[activeStep - 1].duration}</span>
-                <span className="text-muted-foreground">•</span>
-                <span className="text-sm text-muted-foreground">Stap {activeStep} van {steps.length}</span>
+            <div className="flex-1 p-6 md:p-8">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="h-12 w-12 rounded-xl bg-accent/20 flex items-center justify-center flex-shrink-0">
+                  {(() => {
+                    const StepIcon = steps[activeStep - 1].icon
+                    return <StepIcon className="h-6 w-6 text-accent" />
+                  })()}
+                </div>
+                <div>
+                  <div className="flex items-center gap-3 mb-1">
+                    <span className="text-sm font-medium text-accent">{steps[activeStep - 1].duration}</span>
+                    <span className="text-muted-foreground">•</span>
+                    <span className="text-sm text-muted-foreground">Stap {activeStep} van {steps.length}</span>
+                  </div>
+                  <h3 className="text-2xl font-semibold text-foreground">
+                    {steps[activeStep - 1].title}
+                  </h3>
+                </div>
               </div>
-              <h3 className="text-2xl font-semibold text-foreground mb-3">
-                {steps[activeStep - 1].title}
-              </h3>
               <p className="text-muted-foreground leading-relaxed">
                 {steps[activeStep - 1].description}
               </p>
@@ -174,7 +191,7 @@ export function RestorationTimeline({ className }: { className?: string }) {
           </div>
 
           {/* Navigation buttons */}
-          <div className="flex justify-between mt-8 pt-6 border-t border-border">
+          <div className="flex justify-between p-6 md:px-8 border-t border-border">
             <button
               onClick={() => setActiveStep(Math.max(1, activeStep - 1))}
               disabled={activeStep === 1}
