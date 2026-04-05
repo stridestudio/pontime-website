@@ -37,7 +37,7 @@ const steps = [
     description: 'Het horloge wordt volledig gedemonteerd. Elk onderdeel wordt apart gelegd en gecontroleerd.',
     icon: Cog,
     duration: 'Dag 2-3',
-    image: '/atelier/demonteren-bw.jpg',
+    image: '/atelier/cartier-handen.jpg',
   },
   {
     id: 4,
@@ -61,7 +61,7 @@ const steps = [
     description: 'Het uurwerk wordt weer zorgvuldig in elkaar gezet. Nieuwe onderdelen worden indien nodig geplaatst.',
     icon: Settings,
     duration: 'Dag 5-7',
-    image: '/atelier/monteren-bw.jpg',
+    image: '/atelier/uurwerk-houder.jpg',
   },
   {
     id: 7,
@@ -164,6 +164,7 @@ export function RestorationTimeline({ className }: { className?: string }) {
                 alt={steps[activeStep - 1].title}
                 className="absolute inset-0 w-full h-full object-cover"
               />
+              <div className="absolute inset-0 bg-[#8fbc8f]/12 pointer-events-none" />
             </div>
             <div className="flex-1 p-6 md:p-8">
               <div className="flex items-start gap-4 mb-4">

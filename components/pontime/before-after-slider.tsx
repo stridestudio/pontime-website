@@ -64,6 +64,9 @@ export function BeforeAfterSlider({ className }: { className?: string }) {
         />
       </div>
 
+      {/* Groene overlay voor cohesie */}
+      <div className="absolute inset-0 bg-[#8fbc8f]/12 pointer-events-none" />
+
       {/* Labels */}
       <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-black/60 text-white text-xs font-medium tracking-wide">
         VOOR
