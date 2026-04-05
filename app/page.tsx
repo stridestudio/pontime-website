@@ -518,7 +518,7 @@ export default function PontimeHomepage() {
               className="max-w-2xl mx-auto"
             >
               <div className="aspect-[4/3] rounded-2xl overflow-hidden border border-accent/20">
-                {/* <BeforeAfterSlider className="w-full h-full" /> */}
+                <BeforeAfterSlider className="w-full h-full" />
               </div>
               <p className="text-center text-primary-foreground/60 text-sm mt-4">
                 Sleep de divider om het verschil te zien
