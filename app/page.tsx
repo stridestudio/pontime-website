@@ -358,16 +358,16 @@ export default function PontimeHomepage() {
                   </div>
                 </InfiniteSlider>
                 <ProgressiveBlur
-                  className="pointer-events-none absolute left-0 top-0 h-full w-20"
+                  className="pointer-events-none absolute left-0 top-0 h-full w-24"
                   direction="left"
-                  blurIntensity={1}
-                  blurLayers={3}
+                  blurIntensity={6}
+                  blurLayers={6}
                 />
                 <ProgressiveBlur
-                  className="pointer-events-none absolute right-0 top-0 h-full w-20"
+                  className="pointer-events-none absolute right-0 top-0 h-full w-24"
                   direction="right"
-                  blurIntensity={1}
-                  blurLayers={3}
+                  blurIntensity={6}
+                  blurLayers={6}
                 />
               </div>
             </div>
