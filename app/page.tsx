@@ -610,65 +610,6 @@ export default function PontimeHomepage() {
           </div>
         </section>
 
-        {/* Collectors Passport Preview */}
-        <section className="bg-background py-24 md:py-32 border-t border-accent/20">
-          <div className="mx-auto max-w-7xl px-6">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="order-2 lg:order-1"
-              >
-                <CollectorsPassport className="max-w-md mx-auto lg:mx-0" />
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                className="order-1 lg:order-2"
-              >
-                <div className="inline-block mb-4 px-4 py-2 rounded-full bg-accent/20 border border-accent/40">
-                  <span className="text-accent text-sm font-medium tracking-wide uppercase">Nieuw</span>
-                </div>
-                <h2 className="text-4xl md:text-5xl font-serif text-foreground mb-4">Collectors Passport</h2>
-                <p className="text-lg text-muted-foreground mb-8">
-                  Word lid van ons exclusieve klantenprogramma. Verdien badges, volg uw servicegeschiedenis en
-                  ontvang speciale voordelen als trouwe klant.
-                </p>
-                <ul className="space-y-4 mb-8">
-                  <li className="flex items-center gap-3">
-                    <div className="h-6 w-6 rounded-full bg-accent/20 flex items-center justify-center">
-                      <Award className="h-4 w-4 text-accent" />
-                    </div>
-                    <span className="text-foreground">Verzamel exclusieve badges</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <div className="h-6 w-6 rounded-full bg-accent/20 flex items-center justify-center">
-                      <Clock className="h-4 w-4 text-accent" />
-                    </div>
-                    <span className="text-foreground">Volg uw complete servicegeschiedenis</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <div className="h-6 w-6 rounded-full bg-accent/20 flex items-center justify-center">
-                      <Star className="h-4 w-4 text-accent" />
-                    </div>
-                    <span className="text-foreground">Ontvang VIP voordelen bij 5+ services</span>
-                  </li>
-                </ul>
-                <Button
-                  asChild
-                  className="bg-primary hover:bg-primary/90 text-primary-foreground"
-                >
-                  <a href="#contact">Meer informatie</a>
-                </Button>
-              </motion.div>
-            </div>
-          </div>
-        </section>
-
         {/* Testimonial */}
         <section className="bg-primary py-24 md:py-32 border-t border-accent/20">
           <motion.div
