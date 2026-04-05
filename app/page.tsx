@@ -399,7 +399,7 @@ export default function PontimeHomepage() {
                 <Card className="group overflow-hidden shadow-xl bg-card border-border hover:border-accent/50 transition-all h-full p-0 gap-0">
                   <div className="relative aspect-[4/3] overflow-hidden bg-muted">
                     <img
-                      src="/atelier/uurwerk-houder.jpg"
+                      src="/atelier/diensten-full-service.jpg"
                       alt="Full service en reparaties"
                       className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
@@ -429,7 +429,7 @@ export default function PontimeHomepage() {
                 <Card className="group overflow-hidden shadow-xl bg-card border-border hover:border-accent/50 transition-all h-full p-0 gap-0">
                   <div className="relative aspect-[4/3] overflow-hidden bg-muted">
                     <img
-                      src="/atelier/tools-lineup.jpg"
+                      src="/atelier/diensten-polijsten.jpg"
                       alt="Polijsten en lapideren"
                       className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
@@ -459,7 +459,7 @@ export default function PontimeHomepage() {
                 <Card className="group overflow-hidden shadow-xl bg-card border-border hover:border-accent/50 transition-all h-full p-0 gap-0">
                   <div className="relative aspect-[4/3] overflow-hidden bg-muted">
                     <img
-                      src="/atelier/trays-detail.jpg"
+                      src="/atelier/diensten-restauratie.jpg"
                       alt="Restauratie van vintage uurwerken"
                       className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
@@ -491,7 +491,7 @@ export default function PontimeHomepage() {
                   <div className="flex flex-col md:flex-row">
                     <div className="relative md:w-2/5 aspect-[4/3] md:aspect-auto md:min-h-[240px] overflow-hidden bg-muted">
                       <img
-                        src="/atelier/cartier-handen.jpg"
+                        src="/atelier/diensten-bezel.jpg"
                         alt="Bezel cutten en gespecialiseerde diensten"
                         className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       />

@@ -19,3 +19,5 @@ node_modules
 # Stray images in project root (put assets in public/ instead)
 /WhatsApp Image*
 /hf_*.png
+/*.png
+/*.PNG
