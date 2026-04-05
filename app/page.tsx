@@ -327,7 +327,13 @@ export default function PontimeHomepage() {
 
             {/* Background */}
             <div className="absolute inset-0 -z-10 overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#0f2419] via-[#1a3a2e] to-[#0a1812]" />
+              <img
+                src="/hero-bg.png"
+                alt=""
+                aria-hidden="true"
+                className="absolute inset-0 w-full h-full object-cover opacity-20"
+              />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#0f2419]/95 via-[#1a3a2e]/90 to-[#0a1812]/95" />
             </div>
           </div>
         </section>
