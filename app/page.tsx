@@ -251,7 +251,7 @@ export default function PontimeHomepage() {
       <main className="overflow-x-hidden bg-primary">
         {/* Hero Section */}
         <section className="relative min-h-screen">
-          <div className="py-24 md:pb-32 lg:pb-36 lg:pt-72">
+          <div className="py-24 md:pb-32 lg:pb-24 lg:pt-40">
             <div className="relative z-10 mx-auto flex max-w-7xl flex-col px-6 lg:block lg:px-12">
               <div className="mx-auto max-w-3xl text-center lg:ml-0 lg:max-w-2xl lg:text-left">
                 <motion.div
@@ -268,7 +268,7 @@ export default function PontimeHomepage() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.1 }}
-                  className="mt-8 max-w-4xl text-balance text-5xl md:text-6xl lg:mt-16 xl:text-7xl font-serif text-primary-foreground"
+                  className="mt-6 max-w-4xl text-balance text-5xl md:text-6xl lg:mt-8 xl:text-7xl font-serif text-primary-foreground"
                 >
                   Uw horloge in <span className="italic text-accent">goede</span> handen
                 </motion.h1>
@@ -276,7 +276,7 @@ export default function PontimeHomepage() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.2 }}
-                  className="mt-8 max-w-2xl text-balance text-lg text-primary-foreground/80"
+                  className="mt-6 max-w-2xl text-balance text-lg text-primary-foreground/80"
                 >
                   Pontime is een horloge service atelier in Bussum (&apos;t Gooi - Gooise Meren). Met drie zeer
                   ervaren horlogemakers kunnen we jouw horloge repareren, onderhouden, polijsten en lapideren
@@ -286,7 +286,7 @@ export default function PontimeHomepage() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.3 }}
-                  className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row lg:justify-start"
+                  className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row lg:justify-start"
                 >
                   <Button
                     asChild
