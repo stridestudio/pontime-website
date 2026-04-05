@@ -3,7 +3,7 @@
 import { useRef, useState, useCallback, useEffect } from 'react'
 
 export function BeforeAfterSlider({ className }: { className?: string }) {
-  const [sliderPosition, setSliderPosition] = useState(50)
+  const [sliderPosition, setSliderPosition] = useState(25)
   const [isDragging, setIsDragging] = useState(false)
   const containerRef = useRef<HTMLDivElement>(null)
 
@@ -42,22 +42,22 @@ export function BeforeAfterSlider({ className }: { className?: string }) {
       onTouchStart={handleMouseDown}
       onTouchMove={handleTouchMove}
     >
-      {/* After image (full) */}
+      {/* Before image (full background) */}
       <img
-        src="/rolex-na.png"
-        alt="Na restauratie"
+        src="/rolex-voor.png"
+        alt="Voor restauratie"
         className="absolute inset-0 w-full h-full object-cover pointer-events-none"
         draggable={false}
       />
 
-      {/* Before image (clipped) */}
+      {/* After image (clipped from left) */}
       <div
         className="absolute inset-0 overflow-hidden pointer-events-none"
         style={{ width: `${sliderPosition}%` }}
       >
         <img
-          src="/rolex-voor.png"
-          alt="Voor restauratie"
+          src="/rolex-na.png"
+          alt="Na restauratie"
           className="absolute inset-0 h-full object-cover pointer-events-none"
           style={{ width: `${(100 / sliderPosition) * 100}%`, maxWidth: 'none' }}
           draggable={false}
@@ -69,10 +69,10 @@ export function BeforeAfterSlider({ className }: { className?: string }) {
 
       {/* Labels */}
       <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-black/60 text-white text-xs font-medium tracking-wide">
-        VOOR
+        NA
       </div>
       <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-black/60 text-white text-xs font-medium tracking-wide">
-        NA
+        VOOR
       </div>
 
       {/* Divider line + handle */}
