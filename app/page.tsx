@@ -328,7 +328,7 @@ export default function PontimeHomepage() {
         </section>
 
         {/* Trust Indicators */}
-        <section className="bg-primary pb-2 border-t border-accent/20">
+        <section className="bg-gradient-to-br from-[#1a3a2e] via-[#1f4536] to-[#152e24] pb-2 border-t border-accent/20">
           <div className="group relative m-auto max-w-7xl px-6">
             <div className="flex flex-col items-center md:flex-row py-4">
               <div className="md:max-w-44 md:border-r md:border-accent/20 md:pr-6">
@@ -520,7 +520,7 @@ export default function PontimeHomepage() {
         </section>
 
         {/* Before/After Section */}
-        <section className="bg-primary py-24 md:py-32 border-t border-accent/20">
+        <section className="bg-gradient-to-bl from-[#1a3a2e] via-[#213d32] to-[#0f2419] py-24 md:py-32 border-t border-accent/20">
           <div className="mx-auto max-w-7xl px-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -573,7 +573,7 @@ export default function PontimeHomepage() {
         </section>
 
         {/* Atelier Showcase Section */}
-        <section className="bg-primary py-24 md:py-32 border-t border-accent/20 overflow-hidden">
+        <section className="bg-gradient-to-br from-[#152e24] via-[#1a3a2e] to-[#1f4536] py-24 md:py-32 border-t border-accent/20 overflow-hidden">
           <div className="mx-auto max-w-7xl px-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -639,97 +639,6 @@ export default function PontimeHomepage() {
               </motion.div>
             </div>
           </div>
-        </section>
-
-        {/* Service Configurator Section */}
-        <section id="configurator" className="bg-primary py-24 md:py-32 border-t border-accent/20">
-          <div className="mx-auto max-w-7xl px-6">
-            <div className="grid lg:grid-cols-2 gap-12 items-start">
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-              >
-                <h2 className="text-4xl md:text-5xl font-serif text-primary-foreground mb-4">
-                  Configureer uw service
-                </h2>
-                <p className="text-lg text-primary-foreground/80 mb-8">
-                  Ontvang direct een indicatie van de kosten en doorlooptijd voor uw horloge service.
-                </p>
-                <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="h-10 w-10 rounded-full bg-accent/20 border border-accent/40 flex items-center justify-center flex-shrink-0">
-                      <span className="text-accent font-bold">1</span>
-                    </div>
-                    <div>
-                      <h3 className="text-primary-foreground font-semibold mb-1">Kies uw merk</h3>
-                      <p className="text-primary-foreground/70 text-sm">
-                        Selecteer het merk van uw horloge voor een nauwkeurige inschatting.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <div className="h-10 w-10 rounded-full bg-accent/20 border border-accent/40 flex items-center justify-center flex-shrink-0">
-                      <span className="text-accent font-bold">2</span>
-                    </div>
-                    <div>
-                      <h3 className="text-primary-foreground font-semibold mb-1">Beschrijf het probleem</h3>
-                      <p className="text-primary-foreground/70 text-sm">
-                        Welke service heeft uw horloge nodig?
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <div className="h-10 w-10 rounded-full bg-accent/20 border border-accent/40 flex items-center justify-center flex-shrink-0">
-                      <span className="text-accent font-bold">3</span>
-                    </div>
-                    <div>
-                      <h3 className="text-primary-foreground font-semibold mb-1">Ontvang uw advies</h3>
-                      <p className="text-primary-foreground/70 text-sm">
-                        Direct een prijsindicatie en doorlooptijd op maat.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-              >
-                <ServiceConfigurator />
-              </motion.div>
-            </div>
-          </div>
-        </section>
-
-        {/* Testimonial */}
-        <section className="bg-primary pb-24 md:pb-32">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="mx-auto max-w-4xl px-6 text-center"
-          >
-            <div className="flex justify-center mb-8">
-              {[1, 2, 3, 4, 5].map((star) => (
-                <Star key={star} className="h-6 w-6 text-accent fill-accent" />
-              ))}
-            </div>
-            <p className="text-3xl md:text-4xl font-serif italic text-primary-foreground mb-8">
-              &quot;Mijn Rolex Submariner zag eruit alsof hij net uit de vitrine kwam. Ongelooflijk vakmanschap
-              en snelle service.&quot;
-            </p>
-            <div>
-              <p className="text-lg font-semibold text-primary-foreground uppercase tracking-wide">
-                Tevreden Klant
-              </p>
-              <p className="text-primary-foreground/70">Particulier - Bussum</p>
-            </div>
-          </motion.div>
         </section>
 
         {/* About Section */}
@@ -804,6 +713,97 @@ export default function PontimeHomepage() {
               ))}
             </div>
           </div>
+        </section>
+
+        {/* Service Configurator Section */}
+        <section id="configurator" className="bg-gradient-to-tl from-[#1a3a2e] via-[#1f4235] to-[#0f2419] py-24 md:py-32 border-t border-accent/20">
+          <div className="mx-auto max-w-7xl px-6">
+            <div className="grid lg:grid-cols-2 gap-12 items-start">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+              >
+                <h2 className="text-4xl md:text-5xl font-serif text-primary-foreground mb-4">
+                  Configureer uw service
+                </h2>
+                <p className="text-lg text-primary-foreground/80 mb-8">
+                  Ontvang direct een indicatie van de kosten en doorlooptijd voor uw horloge service.
+                </p>
+                <div className="space-y-6">
+                  <div className="flex items-start gap-4">
+                    <div className="h-10 w-10 rounded-full bg-accent/20 border border-accent/40 flex items-center justify-center flex-shrink-0">
+                      <span className="text-accent font-bold">1</span>
+                    </div>
+                    <div>
+                      <h3 className="text-primary-foreground font-semibold mb-1">Kies uw merk</h3>
+                      <p className="text-primary-foreground/70 text-sm">
+                        Selecteer het merk van uw horloge voor een nauwkeurige inschatting.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="h-10 w-10 rounded-full bg-accent/20 border border-accent/40 flex items-center justify-center flex-shrink-0">
+                      <span className="text-accent font-bold">2</span>
+                    </div>
+                    <div>
+                      <h3 className="text-primary-foreground font-semibold mb-1">Beschrijf het probleem</h3>
+                      <p className="text-primary-foreground/70 text-sm">
+                        Welke service heeft uw horloge nodig?
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="h-10 w-10 rounded-full bg-accent/20 border border-accent/40 flex items-center justify-center flex-shrink-0">
+                      <span className="text-accent font-bold">3</span>
+                    </div>
+                    <div>
+                      <h3 className="text-primary-foreground font-semibold mb-1">Ontvang uw advies</h3>
+                      <p className="text-primary-foreground/70 text-sm">
+                        Direct een prijsindicatie en doorlooptijd op maat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              >
+                <ServiceConfigurator />
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* Testimonial */}
+        <section className="bg-gradient-to-b from-[#ede8df] to-[#f4efe6] py-24 md:py-32 border-t border-accent/20">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="mx-auto max-w-4xl px-6 text-center"
+          >
+            <div className="flex justify-center mb-8">
+              {[1, 2, 3, 4, 5].map((star) => (
+                <Star key={star} className="h-6 w-6 text-accent fill-accent" />
+              ))}
+            </div>
+            <p className="text-3xl md:text-4xl font-serif italic text-foreground mb-8">
+              &quot;Mijn Rolex Submariner zag eruit alsof hij net uit de vitrine kwam. Ongelooflijk vakmanschap
+              en snelle service.&quot;
+            </p>
+            <div>
+              <p className="text-lg font-semibold text-foreground uppercase tracking-wide">
+                Tevreden Klant
+              </p>
+              <p className="text-muted-foreground">Particulier - Bussum</p>
+            </div>
+          </motion.div>
         </section>
 
         {/* Contact Section */}
@@ -893,7 +893,7 @@ export default function PontimeHomepage() {
         </section>
 
         {/* Footer */}
-        <footer className="bg-primary border-t border-accent/20 py-12">
+        <footer className="bg-gradient-to-t from-[#0a1812] via-[#1a3a2e] to-[#1a3a2e] border-t border-accent/20 py-12">
           <div className="mx-auto max-w-7xl px-6">
             <div className="flex flex-col md:flex-row justify-between items-center gap-6">
               <Logo variant="dark" />
