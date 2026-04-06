@@ -119,7 +119,7 @@ function ProgressiveBlur({
   blurIntensity?: number
 }) {
   const angle = GRADIENT_ANGLES[direction]
-  const gradient = `linear-gradient(${angle}deg, #1a3a2e 0%, rgba(26,58,46,0) 100%)`
+  const gradient = `linear-gradient(${angle}deg, #006039 0%, rgba(26,58,46,0) 100%)`
   return (
     <div
       className={cn('pointer-events-none', className)}
@@ -165,7 +165,7 @@ const HeroHeader = () => {
         <div
           className={cn(
             'mx-auto max-w-7xl rounded-3xl px-6 transition-all duration-300 lg:px-12',
-            scrolled && 'bg-[#1a3a2e] border border-accent/20'
+            scrolled && 'bg-[#006039] border border-accent/20'
           )}
         >
           <motion.div
@@ -201,7 +201,7 @@ const HeroHeader = () => {
                 </ul>
               </div>
             </div>
-            <div className="bg-[#1a3a2e] group-data-[state=active]:block lg:group-data-[state=active]:flex mb-6 hidden w-full flex-wrap items-center justify-end space-y-8 rounded-3xl border border-accent/20 p-6 shadow-2xl md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none">
+            <div className="bg-[#006039] group-data-[state=active]:block lg:group-data-[state=active]:flex mb-6 hidden w-full flex-wrap items-center justify-end space-y-8 rounded-3xl border border-accent/20 p-6 shadow-2xl md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none">
               <div className="lg:hidden">
                 <ul className="space-y-6 text-base">
                   {menuItems.map((item, index) => (
@@ -322,13 +322,13 @@ export default function PontimeHomepage() {
                 aria-hidden="true"
                 className="absolute inset-0 w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-br from-[#0f2419]/85 via-[#1a3a2e]/75 to-[#0a1812]/90" />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#004d2b]/85 via-[#006039]/75 to-[#003a20]/90" />
             </div>
           </div>
         </section>
 
         {/* Trust Indicators */}
-        <section className="bg-gradient-to-br from-[#1a3a2e] via-[#1f4536] to-[#152e24] pb-2 border-t border-accent/20">
+        <section className="bg-gradient-to-br from-[#006039] via-[#007a48] to-[#005230] pb-2 border-t border-accent/20">
           <div className="group relative m-auto max-w-7xl px-6">
             <div className="flex flex-col items-center md:flex-row py-4">
               <div className="md:max-w-44 md:border-r md:border-accent/20 md:pr-6">
@@ -520,7 +520,7 @@ export default function PontimeHomepage() {
         </section>
 
         {/* Before/After Section */}
-        <section className="bg-gradient-to-bl from-[#1a3a2e] via-[#213d32] to-[#0f2419] py-24 md:py-32 border-t border-accent/20">
+        <section className="bg-gradient-to-bl from-[#006039] via-[#006b3e] to-[#004d2b] py-24 md:py-32 border-t border-accent/20">
           <div className="mx-auto max-w-7xl px-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -573,7 +573,7 @@ export default function PontimeHomepage() {
         </section>
 
         {/* Atelier Showcase Section */}
-        <section className="bg-gradient-to-br from-[#152e24] via-[#1a3a2e] to-[#1f4536] py-24 md:py-32 border-t border-accent/20 overflow-hidden">
+        <section className="bg-gradient-to-br from-[#005230] via-[#006039] to-[#007a48] py-24 md:py-32 border-t border-accent/20 overflow-hidden">
           <div className="mx-auto max-w-7xl px-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -716,7 +716,7 @@ export default function PontimeHomepage() {
         </section>
 
         {/* Service Configurator Section */}
-        <section id="configurator" className="bg-gradient-to-tl from-[#1a3a2e] via-[#1f4235] to-[#0f2419] py-24 md:py-32 border-t border-accent/20">
+        <section id="configurator" className="bg-gradient-to-tl from-[#006039] via-[#007242] to-[#004d2b] py-24 md:py-32 border-t border-accent/20">
           <div className="mx-auto max-w-7xl px-6">
             <div className="grid lg:grid-cols-2 gap-12 items-start">
               <motion.div
@@ -893,7 +893,7 @@ export default function PontimeHomepage() {
         </section>
 
         {/* Footer */}
-        <footer className="bg-gradient-to-t from-[#0a1812] via-[#1a3a2e] to-[#1a3a2e] border-t border-accent/20 py-12">
+        <footer className="bg-gradient-to-t from-[#003a20] via-[#006039] to-[#006039] border-t border-accent/20 py-12">
           <div className="mx-auto max-w-7xl px-6">
             <div className="flex flex-col md:flex-row justify-between items-center gap-6">
               <Logo variant="dark" />
