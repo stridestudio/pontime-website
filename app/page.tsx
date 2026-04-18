@@ -314,15 +314,19 @@ export default function PontimeHomepage() {
 
             </div>
 
-            {/* Background */}
+            {/* Background Video */}
             <div className="absolute inset-0 z-0 overflow-hidden">
-              <img
-                src="/hero-bg.png"
-                alt=""
-                aria-hidden="true"
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                poster="/hero-poster.jpg"
                 className="absolute inset-0 w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-br from-[#004d2b]/85 via-[#006039]/75 to-[#003a20]/90" />
+              >
+                <source src="/hero-video.mp4" type="video/mp4" />
+              </video>
+              <div className="absolute inset-0 bg-gradient-to-br from-[#004d2b]/80 via-[#006039]/65 to-[#003a20]/80" />
             </div>
           </div>
         </section>
