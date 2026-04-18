@@ -326,7 +326,7 @@ export default function PontimeHomepage() {
               >
                 <source src="/hero-video.mp4" type="video/mp4" />
               </video>
-              <div className="absolute inset-0 bg-gradient-to-br from-[#004d2b]/80 via-[#006039]/65 to-[#003a20]/80" />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#004d2b]/50 via-[#006039]/40 to-[#003a20]/50" />
             </div>
           </div>
         </section>
